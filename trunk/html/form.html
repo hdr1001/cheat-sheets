@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+   <title>HTML form basics</title>
+   <meta name="description" content="HTML form basics cheat sheet">
+   <meta name="author" content="Hans de Rooij">
+   <meta name="keywords" content="HTML form cheat sheet 101 template">
+   <meta name="version" content="1.04">
+   <meta name="date" content="2011-06-12 15:00:00 CEST">
+   <meta name="copyright" content="&copy; 2011 Hans de Rooij">
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+   <h1>HTML form cheat sheet</h1>
+   <p>HTML forms can contain all &quot;ordinary&quot; HTML tags. A cheat sheet
+      containing these elementary tags is available at <a href="./basics.html" 
+      title="Jump to HTML basics cheat sheet">this</a> location.
+   </p>
+
+   <form method="post" enctype="application/x-www-form-urlencoded"
+      action="mailto:HansDeRooij@Hotmail.com">
+   <table>
+   <tr>
+      <td>Name</td>
+      <td><input type="text" name="txtName" value="James Bond"></td>
+   </tr>
+   <tr>
+      <td>Alias</td>
+      <td><input type="text" name="txtAlias" value="007" readonly></td>
+   </tr>
+   <tr>
+      <td>Address</td>
+      <!--
+         Default value of the size attribute, for specifying the width of
+         a text box, is 20. This means that, in the example below, nothing
+         changes as a result of setting the value of this attribute to 20.
+         The maxlength attribute specifies the maximum number of characters
+         that can be entered in the box.
+      -->
+      <td><input type="text" name="txtAdr" size="20" maxlength="64"></td>
+   </tr>
+   <tr>
+      <td>City</td>
+      <td><input type="text" name="txtCity"></td>
+   </tr>
+   <tr>
+      <td>Secret code</td>
+      <td><input type="password" name="pwdCode"></td>
+   </tr>
+   <tr>
+      <td>Sex</td>
+      <td><input type="radio" name="optSex" value="M" checked>Male</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td><input type="radio" name="optSex" value="F">Female</td>
+   </tr>
+   <tr>
+      <td>Options</td>
+      <td><input type="checkbox" name="chkOptions" value="W">Water</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td><input type="checkbox" name="chkOptions" value="I">Ice</td>
+      <!-- Same checkbox but disabled
+      <td><input type="checkbox" name="chkOptions" value="I" disabled>Ice</td>
+      -->
+   </tr>
+   <tr>
+      <td></td>
+      <td><input type="checkbox" name="chkOptions" value="S" checked>Stirred
+      </td>
+   </tr>
+   <tr>
+      <td>Menu choice</td>
+      <td>
+         <select name="ddmMenuChoice">
+         <!-- 
+            Use the size attribute to turn the drop down into a list with a 
+            predefined height. Adding the multiple attribute will allow the
+            user to select more than one option.
+         <select name="lstMenuChoice" size="4" multiple>
+         -->
+         <option value="a">A la cart</option>
+         <option value="s">Special</option>
+         <option value="c" selected>Catch of the day</option>
+         </select>
+      </td>
+   </tr>
+   </table>
+   <p>
+      <input type="hidden" name="hdnField" value="Value of hidden field">
+      <!-- The submit button sends the named form contents to the server -->
+      <input type="submit" value="Submit data" accesskey="s">
+      <input type="reset" value="Reset form" accesskey="r">
+   </p>
+   </form>
+
+   <hr>
+   <address>
+      Comments to <a href="mailto:HansDeRooij@Hotmail.com" title="author">
+      Hans de Rooij</a>
+   </address>
+
+   <p>
+      <img src="../imgs/BubbleBoy.jpg" align="middle" alt="BubbleBoy">
+      <img src="../imgs/UbuntuServer.png" align="middle" alt="Ubuntu Server">
+      <img src="../imgs/ApacheLogo.png" align="middle" alt="Apache Server">
+      <a href="http://validator.w3.org/check?uri=referer">
+         <img src="http://www.w3.org/Icons/valid-html401.gif"
+              align="middle" alt="Valid HTML 4.01 Transitional" border="0">
+      </a>
+      &nbsp;<br>
+      &nbsp;<br>
+      &nbsp;<br>
+   </p>
+
+   <p>form.html is a HyperText Markup Language form element cheat sheet</p>
+   <p>&copy; 2011 Hans de Rooij</p>
+   <p>This program is free software; you can redistribute it and/or modify it
+      under the terms of the GNU General Public License as published by the 
+      Free Software Foundation; either version 2 of the License, or (at your
+      option) any later version.
+   </p>
+   <p>This program is distributed in the hope that it will be useful, but 
+      WITHOUT ANY WARRANTY; without even the implied warranty of 
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+      Public License for more details.
+   </p>
+   <p>You should have received a copy of the <a 
+      href="http://www.gnu.org/licenses/gpl.html" title="GNU GPL">GNU General
+      Public License</a> along with this program; if not, write to the Free
+      Software Foundation, Inc., 51 Franklin St, Boston, MA 20110-1301, USA.
+   </p>
+</body>
+</html>
+
