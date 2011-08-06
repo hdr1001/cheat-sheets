@@ -461,6 +461,7 @@ function f018()
 //Jump to next iteration in loop
 function f019()
 {
+
    var exit_chr = "d";
    var ret = "";
 
@@ -486,21 +487,41 @@ function f019()
 //
 // *********************************************************************
 
-function PassingParameters(p1_int, p2_obj)
+//Calls externally defined function TimesTwo
+function f020()
+{
+   var ret;
+   ret = "Core JavaScript does not have a mechanism for loading external ";
+   ret += "modules"
+
+   return ret;
+}
+
+// Different ways of passing parameters. In the function PassingParameters;
+// 1. the contents of parameter p1 is passed by value because a1 contains
+//    a primitive JavaScript datatype (see f002). The value of argument a1
+//    is copied to p1 when the function call is executed. This is similar
+//    to assigning the value of a1 to variable p1
+// 2. parameter p2 is passed by reference because it refers to an object
+//    type value. In the example p2 is assigned a reference to the object
+//    instantiated in f021. This means that p2 refers to the same object 
+//    as a2 and therefore all changes to p2 are also changes to a2
+
+function PassingParameters(p1, p2)
 {
    var ret;
 
    ret = "At the start of function PassingParameters;\n";
-   ret += "  p1_int      = " + p1_int + "\n";
-   ret += "  p2_obj.prop = " + p2_obj.prop + "\n\n";
+   ret += "  p1      = " + p1 + "\n";
+   ret += "  p2.prop = " + p2.prop + "\n\n";
 
    //Change the parameter values
-   p1_int *= 4;
-   p2_obj.prop *= 4;
+   p1 *= 4;
+   p2.prop *= 4;
 
    ret += "At the end of function PassingParameters;\n";
-   ret += "  p1_int      = " + p1_int + "\n";
-   ret += "  p2_obj.prop = " + p2_obj.prop + "\n\n";
+   ret += "  p1      = " + p1 + "\n";
+   ret += "  p2.prop = " + p2.prop + "\n\n";
 
    return ret;
 }
@@ -531,7 +552,7 @@ var StaticVariable = (function()
 {
    var i = 0;
 
-   return function() {return ++i;}
+   return function() {return ++i;};
 })();
 
 //Local variable with static storage duration
@@ -663,7 +684,7 @@ function f024()
 
    return ret;
 }
-/
+
 //Multi-dimensional array
 function f025()
 {
@@ -675,18 +696,47 @@ function f025()
    return ret;
 }
 
-//Using a for-in loop to traverse an array
+//Array length property and using a for-in loop to traverse an array
 function f026()
 {
-   var arr = [1, 3, 5];
-   var ret = "";
+   var p, arr = [1, 3, 5];
+   var ret;
 
-   var p;
+   ret = "The length of arr = " + arr.length + "\n";
 
-   for(p in arr)
-   {
-      ret += "arr[" + p + "] = " + arr[p] + "\n";
-   }
+   arr[arr.length] = "added"; //It's very easy to add array elements
+
+   //Note that the length property is automatically updated
+   ret += "The length of arr = " + arr.length + "\n\n";
+
+   arr.length = 7; //Use the length property to add array elements
+
+   ret += DisplayArray(arr) + "\n";
+
+   arr.length = 3; //Use the length property to truncate the array
+
+   //Use a for-in loop to traverse the (truncated) array
+   for(p in arr) {ret += "arr[" + p + "] = " + arr[p] + "\n";}
+
+   return ret;
+}
+
+//Primitive v. reference types
+function f027()
+{
+   var i_1 = 1, obj_1 = {prop: 1};
+   var i_2, obj_2 = {};
+   var ret;
+
+   i_2 = i_1;      //Assignment of a primitive type
+   obj_1 = obj_2;  //Assignment of a reference type
+
+   i_2 = 2;        //Change the value of variable i_2
+   obj_2.prop = 2; //Change the object's property value
+
+   ret = "i_1 = " + i_1 + ", i_2 = " + i_2 + "\n";
+   ret += "obj_1.prop = " + obj_1.prop + ", ";
+   ret += "obj_2.prop = " + obj_2.prop + "\n";
 
    return ret;
 }
@@ -736,7 +786,6 @@ function f028()
    //are no other references to the dynamically allocated memory the
    //garbage collection process will automatically free it up
    n = 1;
-
    while("prop" + n in q) {delete q["prop" + n]; n++}
 
    if ("prop1" in q) ret += "q.prop1 = " + q.prop1 + "\n";
