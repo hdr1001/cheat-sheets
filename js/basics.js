@@ -461,7 +461,6 @@ function f018()
 //Jump to next iteration in loop
 function f019()
 {
-
    var exit_chr = "d";
    var ret = "";
 
