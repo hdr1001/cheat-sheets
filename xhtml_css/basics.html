@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>XHTML CSS basics</title>
+   <meta name="description" content="XHTML CSS basics cheat sheet" />
+   <meta name="author" content="Hans de Rooij" />
+   <meta name="keywords" content="XHTML CSS basics cheat sheet template" />
+   <meta name="version" content="1.04" />
+   <meta name="date" content="2011-06-14 10:00:00 CEST" />
+   <meta name="copyright" content="&copy; 2011 Hans de Rooij" />
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="../css/hdrcheat06.css" />
+   <style type="text/css">
+   table
+   {
+      margin-top: 1.2em;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #cccccc;
+   }
+   th
+   {
+      text-align: center;
+   }
+   td
+   {
+      padding: 3px 6px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #cccccc;
+      text-align: justify;
+      line-height: 1.3em;
+   }
+   td[headers="trh"]
+   {
+      text-align: center;
+      font-style: italic;
+      vertical-align: middle;
+   }
+   </style>
+</head>
+<body>
+   <div id="center_col">
+
+   <div id="page_header">
+   <h1>hdr.is-a-geek.com</h1>
+   <p><strong>The moment you cheat for the sake of beauty, you know you're an
+      artist</strong><br />David Hockney</p>
+   </div> <!-- Close div page_header-->
+
+   <div id="banner">
+   <img src="../imgs/hdrbnr02.png" alt="Site banner" height="175"
+      width="760" />
+   </div> <!-- Close div banner-->
+
+   <div id="left_col">
+   <div id="site_menu">
+   <h3 class="hide">Menu:</h3>
+   <ul>
+   <li><a href="http://hdr.is-a-geek.com" title="Home">Home</a></li>
+   <li><a href="../html/basics.html" title="HTML cheat">HTML cheat</a></li>
+   <li><a href="../xhtml/basics.html" title="XHTML cheat">XHTML cheat</a></li>
+   <li><a href="../css/hdrcheat.css" title="CSS cheat">CSS cheat</a></li>
+   <li><a href="../c/basics.c" title="C basics">C basics</a></li>
+   <li><a href="../c/intermediate.c" title="C intermediate">C intermediate</a>
+      </li>
+   <li><a href="../cpp/basics.cpp" title="C++ basics">C++ basics</a></li>
+   <li><a href="../vb/basics.bas" title="VB basics">VB basics</a></li>
+   </ul>
+   </div> <!-- Close div site_menu-->
+   <div id="announce">
+   <h3>Latest news:</h3>
+   <p><strong>Jan 2006</strong><br />
+   No news</p>
+   <p><strong>Feb 2006</strong><br />
+   Still no news</p>
+   </div> <!-- Close div announce -->
+   </div> <!-- Close div left_col -->
+
+   <div id="right_col">
+   <div id="add_info">
+   <h3>Additional info</h3>
+   <p>
+      To view the source of this XHTML cheat sheet choose option (Page) Source
+      from your browser&#39;s View menu.
+   </p>
+   </div> <!-- Close div add_info --> 
+   <div id="ext_menu">
+   <h3>External links</h3>
+   <p>
+      - <a href="http://www.google.com" title="Google">Google</a><br />
+      - <a href="http://www.w3schools.com" title="W3Schools">W3Schools</a>
+         <br />
+      - <a href="http://validator.w3.org" title="Validate HTML">Validate HTML
+         </a><br />
+      - <a href="http://jigsaw.w3.org/css-validator/" title="Validate css">
+         Validate CSS</a><br />
+      - <a href="http://openwebdesign.org/design/2199/andreas01/"
+         title="Original design, Andreas01">Original design</a>
+   </p>
+   </div> <!-- Close div ext_menu -->
+   </div> <!-- Close div right_col -->
+
+   <div id="content">
+   <h1 style="margin-top:0">Document header (level 1)</h1>
+   <h2>Document headers structure your page (level 2)</h2>
+   <h3>Document headers can go six levels deep (level 3)</h3>
+
+   <p>Perfectly ordinary paragraph</p>
+   <p>Use <a href="http://www.google.com/" title="Jump to Google">this</a>
+      hyperlink to jump to Google
+   </p>
+   <p>Make a <a href="#DestAnchor" title="Jump to destination anchor">jump</a>
+      to the destination anchor defined in this document
+   </p>
+
+   <h3>More block level elements</h3>
+   <p>This blockquote example contains the br element to force a new line.</p>
+   <blockquote cite="http://www.shakespeare.com/"><p>
+      To be, or not to be, <br />
+      that is the question
+   </p></blockquote>
+   <p><acronym title="eXtensible HyperText Markup Language">XHTML</acronym>
+      lists are also block level elements.
+   </p>
+   <ol>
+      <li>This is the first point I wanted to make.</li>
+      <li>The second point is subdivided into two points;
+         <ul>
+            <li>The first, unordered, subpoint.</li>
+            <li>The second, again unordered, subpoint.</li>
+         </ul>
+      </li>
+      <li>There are two more points that I wanted to make. This is number
+         three.</li>
+      <li>Lastly point four.</li>
+   </ol>
+
+   <h3>Common inline elements</h3>
+   <p>Most inline elements are very similar and have few attributes. The most
+      commonly used inline elements are those used to markup phrases. Each of
+      these elements has a different semantic meaning but they have the same
+      syntax and characteristics.
+   </p>
+   <p>It's possible to define your own <span class="cap1st">custom inline
+      elements</span> using the span tag. Items enclosed in this tag can be
+      given specific <span class="cap1st">style attributes</span>.
+   </p>
+   <p>The <b>b</b> element suggests that the text be rendered as <b>bold</b>
+      text. Probably an element such as <strong>strong</strong> is more
+      appropriate since this element expresses the meaning of the markup more
+      clearly. Another alternative for <b>bold</b> is <em>em</em> for 
+      <em>emphasized</em>. More often however <em>em</em> is used as an 
+      alternative for <i>i</i>. The <i>i</i> element stands for <i>italic</i>
+      which is, of course, also an instruction primarily related to the
+      rendering of text.
+   </p>
+
+   <!-- Start of XHTML comment
+      Please find listed below an example of a tabular data table
+      Table tags missing from this example are;
+         * colgroup is used most often in conjunction with the rules attribute
+                    of the table tag to put borders between groups of columns.
+         * col      defines the properties of one column except when used with
+                    the span attibute. If the span attribute is set to a value
+                    larger than one then the formating will apply to multiple
+                    columns.
+         * tfoot    indicates that a group of rows form the table footer.
+      BTW table is a block level element!
+
+      Last line of XHTML comment.
+   -->
+ 
+   <table>
+   <thead>
+      <tr><th colspan="2">Overview of other inline elements</th></tr>
+      <tr><th id="trh">Tag</th><th>Use tage to ...</th></tr>
+   </thead>
+   <tbody>
+   <tr>
+      <td headers="trh">cite</td>
+      <td> ... indicate a <cite>citation or reference</cite> such as the title
+         of a text being referred to.
+      </td>
+   </tr><tr>
+      <td headers="trh">dfn</td>
+      <td> ... mark the <dfn>defining instance</dfn> of a term, the first time
+         it's mentioned in the text.
+      </td>
+   </tr><tr>
+      <td headers="trh">q</td>
+      <td> ... mark up short quotations. The q tag is the inline equivalent of
+         the blockquote element. I was once told <q>the q tag is used when 
+         quoting a small portion of text</q>. To which I replied <q>if you say
+         so</q>.
+      </td>
+   </tr><tr>
+      <td headers="trh">code</td>
+      <td> ... indicate that a fragment of text is computer code. For example;
+         <code>i = j + 1;</code>
+      </td>
+   </tr><tr>
+      <td headers="trh">kbd</td>
+      <td> ... indicate <kbd>text entered by a user</kbd> when using a
+         computer.
+      </td>
+   </tr><tr>
+      <td headers="trh">var</td>
+      <td> ... markup a <var>variable</var> in a computer program.</td>
+   </tr><tr>
+      <td headers="trh">samp</td>
+      <td> ... indicate that a fragment of text is <samp>sample output</samp>
+         from a computer program.
+      </td>
+   </tr><tr>
+      <td headers="trh">abbr</td>
+      <td> ... indicate an <abbr>abbreviation</abbr>. The abbreviated term is
+         not spelled out in full but is written using less characters (such as
+         <abbr>etc.</abbr>, <abbr>i.e.</abbr>).
+      </td>
+   </tr><tr>
+      <td headers="trh">acronym</td>
+      <td> ... denote an acronym, that is a series of characters representing
+         a phrase (such as <acronym>HTML</acronym>, <acronym>HTTP</acronym>).
+      </td>
+   </tr><tr>
+      <td headers="trh">ins</td>
+      <td> ... indicate that the text has been <ins>inserted</ins> into the
+         document since the last revision.
+      </td>
+   </tr><tr>
+      <td headers="trh">del</td>
+      <td> ... indicate that the text has been <del>deleted</del> from the
+         document since the last revision.
+      </td>
+   </tr><tr>
+      <td headers="trh">sup</td>
+      <td> ... create text that is rendered in superscript. Can also be used,
+         in conjunction with hyperlinks, to make footnotes<sup>1</sup>.
+      </td>
+   </tr><tr>
+      <td headers="trh">sub</td>
+      <td> ... create text that is rendered in subscript. The sub tag is of
+         value for constructing chemical formulas or mathematical expressions
+         like H<sub>2</sub>O.
+      </td>
+   </tr>
+   </tbody>
+   </table>
+
+   <h3>Closing remarks</h3>
+   <p><a id="DestAnchor">The destination anchor</a> is the link target</p>
+   <p>For more information on XHTML form elements follow <a href="./form.html"
+      title="Jump to XHTML form cheat sheet">this</a> link. You can download
+      the most recent version of this document from <a
+      href="http://cheat-sheets.googlecode.com/svn/trunk/xhtml_css/basics.html"
+      title="Download this document">Google code</a>.
+   </p>
+   </div> <!-- Close div content -->
+
+   <hr />
+   <address>
+      Comments to <a href="mailto:HansDeRooij@Hotmail.com" title="author">
+      Hans de Rooij</a>
+   </address>
+
+   <div id="tech_dedication">
+   <p>
+      <img src="../imgs/BubbleBoy.jpg" alt="BubbleBoy" />
+      <img src="../imgs/UbuntuServer.png" alt="Ubuntu Server" />
+      <img src="../imgs/ApacheLogo.png" alt="Apache Server" />
+      <a href="http://validator.w3.org/check?uri=referer">
+         <img src="http://www.w3.org/Icons/valid-xhtml10.gif"
+              alt="Valid XHTML 1.0 Strict" />
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+         <img src="http://jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS" />
+      </a>
+   </p>
+   </div> <!-- Close div tech_dedication -->
+
+   <div id="legal">
+   <p>basics.html is an eXtensible HyperText Markup Language cheat sheet</p>
+   <p>&copy; 2011 Hans de Rooij &#124; Original design <a 
+      href="http://andreasviklund.com" title="Andreas Viklund">
+      Andreas Viklund</a></p>
+   <p>This program is free software; you can redistribute it and/or modify it
+      under the terms of the GNU General Public License as published by the 
+      Free Software Foundation; either version 2 of the License, or (at your
+      option) any later version.
+   </p>
+   <p>This program is distributed in the hope that it will be useful, but 
+      WITHOUT ANY WARRANTY; without even the implied warranty of 
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+      Public License for more details.
+   </p>
+   <p>You should have received a copy of the <a 
+      href="http://www.gnu.org/licenses/gpl.html" title="GNU GPL">GNU General
+      Public License</a> along with this program; if not, write to the Free
+      Software Foundation, Inc., 51 Franklin St, Boston, MA 20110-1301, USA.
+   </p>
+   </div> <!-- Close div legal -->
+   </div> <!-- Close div center_col -->
+</body>
+</html>
+
