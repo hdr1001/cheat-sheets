@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>XHTML CSS form basics</title>
+   <meta name="description" content="XHTML CSS form basics cheat sheet" />
+   <meta name="author" content="Hans de Rooij" />
+   <meta name="keywords" content="XHTML CSS form cheat sheet 101 template" />
+   <meta name="version" content="1.04" />
+   <meta name="date" content="2011-06-14 10:00:00 CEST" />
+   <meta name="copyright" content="&copy; 2011 Hans de Rooij" />
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="../css/hdrcheat.css" />
+</head>
+<body>
+   <div id="center_col">
+
+   <div id="page_header">
+   <h1>hdr.is-a-geek.com</h1>
+   <p><strong>The moment you cheat for the sake of beauty, you know you're an
+      artist</strong><br />David Hockney</p>
+   </div> <!-- Close div page_header-->
+
+   <div id="banner">
+   <img src="../imgs/hdrbnr02.png" alt="Site banner" height="175"
+      width="760" />
+   </div> <!-- Close div banner-->
+
+   <div id="left_col">
+   <div id="site_menu">
+   <h3 class="hide">Menu:</h3>
+   <ul>
+   <li><a href="http://hdr.is-a-geek.com" title="Home">Home</a></li>
+   <li><a href="../html/basics.html" title="HTML cheat">HTML cheat</a></li>
+   <li><a href="../xhtml/basics.html" title="XHTML cheat">XHTML cheat</a></li>
+   <li><a href="../css/hdrcheat.css" title="CSS cheat">CSS cheat</a></li>
+   <li><a href="../c/basics.c" title="C basics">C basics</a></li>
+   <li><a href="../c/intermediate.c" title="C intermediate">C intermediate</a>
+      </li>
+   <li><a href="../cpp/basics.cpp" title="C++ basics">C++ basics</a></li>
+   <li><a href="../vb/basics.bas" title="VB basics">VB basics</a></li>
+   </ul>
+   </div> <!-- Close div site_menu-->
+   <div id="announce">
+   <h3>Latest news:</h3>
+   <p><strong>Jan 2006</strong><br />
+   No news</p>
+   <p><strong>Feb 2006</strong><br />
+   Still no news</p>
+   </div> <!-- Close div announce -->
+   </div> <!-- Close div left_col -->
+
+   <div id="right_col">
+   <div id="add_info">
+   <h3>Additional info</h3>
+   <p>
+      To view the source of this XHTML cheat sheet choose option (Page) Source
+      from your browser&#39;s View menu.
+   </p>
+   </div> <!-- Close div add_info --> 
+   <div id="ext_menu">
+   <h3>External links</h3>
+   <p>
+      - <a href="http://www.google.com" title="Google">Google</a><br />
+      - <a href="http://www.w3schools.com" title="W3Schools">W3Schools</a>
+         <br />
+      - <a href="http://validator.w3.org" title="Validate HTML">Validate HTML
+         </a><br />
+      - <a href="http://jigsaw.w3.org/css-validator/" title="Validate css">
+         Validate CSS</a><br />
+      - <a href="http://openwebdesign.org/design/2199/andreas01/"
+         title="Original design, Andreas01">Original design</a>
+   </p>
+   </div> <!-- Close div ext_menu -->
+   </div> <!-- Close div right_col -->
+
+   <div id="content">
+   <h1 style="margin-top:0">XHTML form basics cheat sheet</h1>
+   <p>XHTML forms can contain all &quot;ordinary&quot; XHTML tags. A cheat
+      sheet containing these elementary tags is available at <a
+      href="./basics.html" title="Jump to XHTML basics cheat sheet">this</a>
+      location.
+   </p>
+
+   <form method="post" enctype="application/x-www-form-urlencoded"
+      action="mailto:HansDeRooij@Hotmail.com">
+
+   <fieldset>
+   <legend>Form elements example</legend>
+
+   <table>
+
+   <col class="FormLeftCol" />
+   <col class="FormMiddleCol" />
+   <col class="FormRightCol" />
+
+   <tr><td colspan="3" style="height:8px"></td></tr>
+   <tr>
+      <td><label for="txtName" class="ll">Name</label></td>
+      <td colspan="2">
+         <input type="text" name="txtName" id="txtName" value="James Bond"
+            tabindex="1" />
+      </td>
+   </tr>
+   <tr>
+      <td><label for="txtAlias" class="ll">Alias</label></td>
+      <td colspan="2">
+         <input type="text" name="txtAlias" id="txtAlias" value="007"
+            tabindex="2" readonly="readonly" />
+      </td>
+   </tr>
+   <tr>
+      <td><label for="txtAdr" class="ll">Address</label></td>
+      <!--
+         The maxlength attribute specifies the maximum number of characters
+         that can be entered in the box.
+      -->
+      <td colspan="2">
+         <input type="text" name="txtAdr" id="txtAdr" tabindex="3"
+            maxlength="64" />
+      </td>
+   </tr>
+   <tr>
+      <td><label for="txtCity" class="ll">City</label></td>
+      <td colspan="2">
+         <input type="text" name="txtCity" id="txtCity" tabindex="4" />
+      </td>
+   </tr>
+   <tr>
+      <td><label for="pwdCode" class="ll">Secret code</label></td>
+      <td colspan="2">
+         <input type="password" name="pwdCode" id="pwdCode" tabindex="5" />
+      </td>
+   </tr>
+
+   <tr><td colspan="3" style="height:8px"></td></tr>
+   <tr>
+      <td><label class="ll">Sex</label></td>
+      <td><input type="radio" name="optSex" id="optMale" class="OptOrChk"
+         value="M" tabindex="6" checked="checked" />
+      </td>
+      <td><label for="optMale" class="rl">Male</label></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td><input type="radio" name="optSex" id="optFemale" class="OptOrChk"
+         value="F" tabindex="7" /></td>
+      <td><label for="optFemale" class="rl">Female</label></td>
+   </tr>
+
+   <tr><td colspan="3" style="height:8px"></td></tr>
+   <tr>
+      <td><label class="ll">Options</label></td>
+      <td><input type="checkbox" name="chkOptions" id="chkWater"
+         class="OptOrChk" value="W" tabindex="8" /></td>
+      <td><label for="chkWater" class="rl">Water</label></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td><input type="checkbox" name="chkOptions" id="chkIce"
+         class="OptOrChk" value="I" tabindex="8" /></td>
+      <!-- Same checkbox but disabled
+      <td><input type="checkbox" name="chkOptions" id="chkIce"
+         class="OptOrChk" value="I" tabindex="8" disabled="disabled" /></td>
+      -->
+      <td><label for="chkIce" class="rl">Ice</label></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td><input type="checkbox" name="chkOptions" id="chkStir"
+         class="OptOrChk" value="S" tabindex="9" checked="checked" /></td>
+      <td><label for="chkStir" class="rl">Stirred</label></td>
+   </tr>
+
+   <tr><td colspan="3" style="height:8px"></td></tr>
+   <tr>
+      <td><label for="ddmMenuChoice" class="ll">Menu choice</label></td>
+      <td colspan="2">
+      <!--
+         Use the size attribute to turn the drop down into a list with a
+         predefined height. Adding the multiple attribute will allow the 
+         user to select more than one option.
+         <select name="lstMenuChoice" size="4" multiple="multiple">
+         <select name="ddmMenuChoice" id="ddmMenuChoice" tabindex="10"
+            size="4" multiple="multiple">
+      -->
+         <select name="ddmMenuChoice" id="ddmMenuChoice" tabindex="10">
+         <option value="a">A la cart</option>
+         <option value="s">Special</option>
+         <option value="c" selected="selected">Catch of the day</option>
+         </select>
+      </td>
+   </tr>
+
+   <tr><td colspan="3" style="height:8px"></td></tr>
+   <tr>
+      <td></td>
+      <td colspan="2">
+         <input type="submit" class="SubmOrRe" value="Submit" tabindex="11"
+            accesskey="s" />
+         <input type="reset" class="SubmOrRe" value="Reset" tabindex="12"
+            accesskey="r" />
+      </td>
+   </tr>
+
+   </table>
+
+   <input type="hidden" name="hdnField" value="Value of hidden field" />
+
+   </fieldset>
+   </form>
+
+   <p>A few words about this form design for Andreas01. When I started work on
+      this design it was my goal to use CSS where possible and to avoid the use
+      of tables. I soon discovered that, especially in IE6, this is by no means
+      easy. An important hurdle is that this browser does not support attribute
+      selectors. At some point I switched back to a table based design and I
+      don't regret it. The final result now matches my expectations in both
+      Firefox 1.5 and IE6. It handles larger and smaller font sizes relatively
+      well and is nicely aligned. Lastly I think it's important to mention that
+      even if CSS is not supported by the user agent the form still looks quite
+      acceptable.
+   </p>
+
+   <p>In case you want to apply this form design to your own web page you can
+      do so as long as you respect the terms of the <a 
+      href="http://www.gnu.org/licenses/gpl.html" title="GNU GPL">GNU General 
+      Public License</a>. I would appreciate it if you would include a link to
+      this page on your website but you are under no obligation to do so.
+   </p>
+
+   <p>You can download the most recent version of this document from <a
+      href="http://cheat-sheets.googlecode.com/svn/trunk/xhtml_css/form.html"
+      title="Download this document">Google code</a>.
+   </p>
+   </div> <!-- Close div content -->
+
+   <hr />
+   <address>
+      Comments to <a href="mailto:HansDeRooij@Hotmail.com" title="author">
+      Hans de Rooij</a>
+   </address>
+
+   <div id="tech_dedication">
+   <p>
+      <img src="../imgs/BubbleBoy.jpg" alt="BubbleBoy" />
+      <img src="../imgs/UbuntuServer.png" alt="Ubuntu Server" />
+      <img src="../imgs/ApacheLogo.png" alt="Apache Server" />
+      <a href="http://validator.w3.org/check?uri=referer">
+         <img src="http://www.w3.org/Icons/valid-xhtml10.gif"
+              alt="Valid XHTML 1.0 Strict" />
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+         <img src="http://jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS" />
+      </a>
+   </p>
+   </div> <!-- Close div tech_dedication -->
+
+   <div id="legal">
+   <p>form.html is an eXtensible HyperText Markup Language form element cheat
+      sheet
+   </p>
+   <p>&copy; 2011 Hans de Rooij &#124; Original design <a 
+      href="http://andreasviklund.com" title="Andreas Viklund">
+      Andreas Viklund</a></p>
+   <p>This program is free software; you can redistribute it and/or modify it
+      under the terms of the GNU General Public License as published by the 
+      Free Software Foundation; either version 2 of the License, or (at your
+      option) any later version.
+   </p>
+   <p>This program is distributed in the hope that it will be useful, but 
+      WITHOUT ANY WARRANTY; without even the implied warranty of 
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+      Public License for more details.
+   </p>
+   <p>You should have received a copy of the <a 
+      href="http://www.gnu.org/licenses/gpl.html" title="GNU GPL">GNU General
+      Public License</a> along with this program; if not, write to the Free
+      Software Foundation, Inc., 51 Franklin St, Boston, MA 20110-1301, USA.
+   </p>
+   </div> <!-- Close div legal -->
+   </div> <!-- Close div center_col -->
+</body>
+</html>
+
