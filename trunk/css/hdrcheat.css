@@ -2,7 +2,7 @@
    hdrcheat.css - an open source xhtml/css website layout
    by Hans de Rooij based on andreas01 by Andreas Viklund
 
-Basic cascading style sheet syntax; selector{property: value}
+Basic cascading style sheet syntax; selector{property: value;}
 
 Selector
 {
@@ -37,7 +37,7 @@ Selector
    border-width: ;
    border-color: ;
 
-   - Box behaviour in case contents doesn't fit
+   - Box behaviour in case contents does not fit
    overflow: visible/hidden/scroll;
 
    - Box display
@@ -63,14 +63,172 @@ Selector
    word-spacing: ;
    letter-spacing: ;
 }
+
+
+Setup the box model of the cheat sheet. The structure of the page is;
+
+body
+   center_col
+      page_header
+         page_header_url
+	 page_header_quote
+      banner
+
+      left_col
+         site_menu
+	 announce
+	 
+      right_col
+         add_info
+	 ext_menu
+
+      content
+      hr#below_content
+
+      contact_info
+      tech_dedication
+      legal
 */
 
 body
 {
    padding: 0;
    margin: 0;
+   border-style: none;
+}
+
+#center_col
+{
+   width: 760px;
+   padding: 0;
+   margin: 0 auto; /* top and bottom margin 0, box centered in the middle */
+}
+
+#page_header
+{
+   width: inherit;
+   height: 45px;
+   padding: 0;
+   margin: 12px 0 0 0;
+}
+
+#page_header_url
+{
+   width: 300px;
+   padding: 0;
+   margin: 0 0 12px 0;
+   float: left;
+}
+
+#page_header_quote
+{
+   width: 450px;
+   padding: 0;
+   margin: 0 0 12px 0;
+   float: right;
+}
+
+#banner
+{
+   width: inherit;
+   padding: 0;
+   margin: 0 0 10px 0;
+   border-style: none;
+}
+
+#left_col
+{
+   width: 150px;
+   padding: 0;
+   margin: 0 0 20px 0;
+   float: left;
+}
+
+#site_menu
+{
+   width: inherit;
+   padding: 0;
+   margin: 0 0 20px 0;
+}
+
+#announce
+{
+   width: 130px;
+   padding: 10px;
+   margin: 0 0 15px 0;
+}
+
+#right_col
+{
+   width: 120px;
+   padding: 0;
+   margin: 0 0 20px 0;
+   float: right;
+}
+
+#add_info
+{
+   width: inherit;
+   padding: 0;
+   margin: 0 0 20px 0;
+}
+
+#ext_menu
+{
+   width: inherit;
+   padding: 0;
+   margin: 0 0 15px 0;
+}
+
+#content
+{
+   width: auto;
+   padding: 0 10px 0 10px;
+   margin: 0 130px 25px 160px;
+   border-left-style: solid;
+   border-left-width: 1px;
+   border-left-color: #f0f0f0;
+   border-right-style: solid;
+   border-right-width: 1px;
+   border-right-color: #f0f0f0;
+}
+
+hr#below_content
+{
+   width: 700px;
+   padding: 0;
+   margin: 0 60px 5px 0;
+   clear: both;
+}
+
+#contact_info
+{
+   width: auto;
+   margin: 0 0 20px 0;
+}
+
+#tech_dedication
+{
+   width: auto;
+   margin: 0 0 50px 0;
+}
+
+#legal
+{
+   width: 480px;
+   padding: 5px 15px 10px;
+   margin: 0 0 15px 0;
+   border-style: solid;
+   border-width: 1px;
+}
+
+
+/* Apply formatting to the cheat sheet */
+
+body
+{
    background-color: #f4f4f4;
-   background-image: url(bg.gif);
+   background-image: url(../imgs/bg.gif);
    background-position: top center;
    background-attachment: scroll;
    background-repeat: repeat-y;
@@ -110,60 +268,26 @@ p
 
 #center_col
 {
-   width: 760px;
-   margin: 0 auto;
    background-color: #ffffff;
    color: #303030;
 }
 
-#page_header
+#page_header_url h1
 {
-   height: 40px;
    padding: 0;
-   margin: 12px 0 0 0;
-   clear: both;
-}
-
-#page_header h1
-{
-   width: 300px;
-   margin: 0 0 12px 0;
-   float: left;
+   margin: 0;
    letter-spacing: -0.1em;
 }
 
-#page_header p 
+#page_header_quote p 
 {
-   width: 450px;
-   margin: 0 0 12px 0;
-   float: right;
+   padding: 0;
+   margin: 0;
    background-color: inherit;
    color: #a0a0a0;
    text-align: center;
    font-size: 0.85em;
    line-height: 1.2em;
-}
-
-#banner
-{
-   margin: 0 0 10px 0;
-   border-style: none;
-}
-
-#left_col
-{
-   width: 150px;
-   padding: 0;
-   margin: 0 0 20px 0;
-   float: left;
-   clear: left;
-}
-
-#site_menu
-{
-   width: inherit;
-   padding: 0;
-   margin: 0 0 20px 0;
 }
 
 #site_menu ul
@@ -202,9 +326,6 @@ p
 
 #announce
 {
-   width: 130px;
-   padding: 10px;
-   margin: 0 0 15px 0;
    background-color: #f4f4f4;
    color: #505050;
    line-height: 1.3em;
@@ -220,21 +341,6 @@ p
 {
    margin: 0 0 10px 0;
    font-size: 0.9em;
-}
-
-#right_col
-{
-   width: 120px;
-   padding: 0;
-   margin: 0 0 20px 0;
-   float: right;
-}
-
-#add_info
-{
-   width: inherit;
-   padding: 0;
-   margin: 0 0 20px 0;
 }
 
 #add_info h3
@@ -270,22 +376,8 @@ p
 
 #content
 {
-   width: auto;
-   padding: 0 10px 0 10px;
-   margin: 0 130px 20px 160px;
-   border-left-style: solid;
-   border-left-width: 1px;
-   border-left-color: #f0f0f0;
-   border-right-style: solid;
-   border-right-width: 1px;
-   border-right-color: #f0f0f0;
    text-align: left;
    line-height: 1.6em;
-}
-
-#tech_dedication
-{
-   margin: 0 0 60px 0;
 }
 
 #tech_dedication p img
@@ -295,13 +387,8 @@ p
 
 #legal
 {
-   width: 480px;
-   padding: 5px 10px;
-   margin: 30px 0 10px 0;
    background-color: #f4f4f4;
    color: inherit;
-   border-style: solid;
-   border-width: 1px;
    text-align: justify;
    font-size: 0.9em;
 }
@@ -312,6 +399,7 @@ a img
    text-decoration: none;
 }
 
+/*
 form
 {
    width: inherit;
@@ -433,6 +521,7 @@ select
    border-color: #cccccc;
    vertical-align: top;
 }
+*/
 
 .hide
 {
@@ -446,7 +535,6 @@ select
    font-style: italic;
    text-transform: capitalize;
 }
-
 
 /*
 
