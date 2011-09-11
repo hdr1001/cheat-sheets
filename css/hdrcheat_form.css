@@ -1,0 +1,151 @@
+/* Apply formatting to the form elements of the cheat sheet */
+
+form
+{
+   width: inherit;
+   padding: 0;
+   margin: 20px 0 24px 0;
+}
+
+form fieldset
+{
+   width: 360px;
+   padding: 0 10px 10px 10px;
+   margin: 10px auto;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #cccccc;
+}
+
+form fieldset legend
+{
+   padding: 2px 6px;
+   margin: 0;
+   background-color: #f4f4f4;
+   color: inherit;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #cccccc;
+}
+
+form fieldset table
+{
+   padding: 0;
+   margin: 0 auto;
+}
+
+.FormLeftCol
+{
+   width: 110px;
+}
+
+.FormMiddleCol
+{
+   width: 15px;
+}
+
+.FormRightCol
+{
+   width: 190px;
+}
+
+form fieldset table tr
+{
+   padding: 0;
+   margin: 0;
+}
+
+form fieldset table td
+{
+   padding: 0;
+   margin: 0;
+   border-style: none;
+}
+
+label
+{
+   padding: 0;
+   border-style: none;
+   vertical-align: middle;
+   text-align: right;
+}
+
+label.ll
+{
+   margin: 1px 5px 0 0;
+   float: right;
+}
+
+label.rl
+{
+   margin: 1px 0 0 5px;
+   float: left;
+}
+
+input
+{
+   width: 165px;
+   padding: 0 2px;
+   margin: 1px 2px 0 0;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #cccccc;
+   vertical-align: middle;
+}
+
+input.OptOrChk
+{
+   width: 15px;
+   border-style: none;
+}
+
+input.SubmOrRe
+{
+   width: 80px;
+   margin: 3px 2px 0 0;
+   background-color: #f4f4f4;
+   color: inherit;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #cccccc;
+   vertical-align: top;
+}
+
+select
+{
+   width: 165px;
+   padding: 0;
+   margin: 2px 2px 0 0;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #cccccc;
+   vertical-align: top;
+}
+
+
+/*
+
+hdrcheat_form.css is an Cascading Style Sheet cheat sheet
+copyright 2011 Hans de Rooij, Original design Andreas Viklund
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of
+the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public 
+License (http://www.gnu.org/licenses/gpl.html) along with
+this program; if not, write to: 
+
+The Free Software Foundation, Inc.
+51 Franklin St
+Boston MA 20110-1301
+USA.
+
+*/
+
