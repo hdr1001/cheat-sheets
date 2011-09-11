@@ -32,6 +32,13 @@ form fieldset table
 {
    padding: 0;
    margin: 0 auto;
+   border-style: none;
+}
+
+form fieldset table tr, form fieldset table td
+{
+   padding: 0;
+   margin: 0;
 }
 
 .FormLeftCol
@@ -47,19 +54,6 @@ form fieldset table
 .FormRightCol
 {
    width: 190px;
-}
-
-form fieldset table tr
-{
-   padding: 0;
-   margin: 0;
-}
-
-form fieldset table td
-{
-   padding: 0;
-   margin: 0;
-   border-style: none;
 }
 
 label
@@ -96,6 +90,8 @@ input
 input.OptOrChk
 {
    width: 15px;
+   margin: 0;
+   margin-top: -2px;
    border-style: none;
 }
 
