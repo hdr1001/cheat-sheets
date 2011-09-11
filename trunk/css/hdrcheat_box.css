@@ -1,0 +1,190 @@
+/* Setup the box model of the cheat sheet. */
+
+/*
+
+The structure of the page is;
+
+body
+   center_col
+      page_header
+         page_header_url
+	 page_header_quote
+      banner
+
+      left_col
+         site_menu
+	 announce
+	 
+      right_col
+         add_info
+	 ext_menu
+
+      content
+      hr#below_content
+
+      contact_info
+      tech_dedication
+      legal
+
+*/
+
+body
+{
+   padding: 0;
+   margin: 0;
+   border-style: none;
+}
+
+#center_col
+{
+   width: 760px;
+   padding: 0;
+   margin: 0 auto;
+}
+
+#page_header
+{
+   width: inherit;
+   height: 45px;
+   padding: 0;
+   margin: 12px 0 0 0;
+}
+
+#page_header_url
+{
+   width: 300px;
+   padding: 0;
+   margin: 0 0 12px 0;
+   float: left;
+}
+
+#page_header_quote
+{
+   width: 450px;
+   padding: 0;
+   margin: 0 0 12px 0;
+   float: right;
+}
+
+#banner
+{
+   width: inherit;
+   padding: 0;
+   margin: 0 0 10px 0;
+   border-style: none;
+}
+
+#left_col
+{
+   width: 150px;
+   padding: 0;
+   margin: 0 0 20px 0;
+   float: left;
+}
+
+#site_menu
+{
+   width: inherit;
+   padding: 0;
+   margin: 0 0 20px 0;
+}
+
+#announce
+{
+   width: 130px;
+   padding: 10px;
+   margin: 0 0 15px 0;
+}
+
+#right_col
+{
+   width: 120px;
+   padding: 0;
+   margin: 0 0 20px 0;
+   float: right;
+}
+
+#add_info
+{
+   width: inherit;
+   padding: 0;
+   margin: 0 0 20px 0;
+}
+
+#ext_menu
+{
+   width: inherit;
+   padding: 0;
+   margin: 0 0 15px 0;
+}
+
+#content
+{
+   width: auto;
+   padding: 0 10px 0 10px;
+   margin: 0 130px 25px 160px;
+   border-left-style: solid;
+   border-left-width: 1px;
+   border-left-color: #f0f0f0;
+   border-right-style: solid;
+   border-right-width: 1px;
+   border-right-color: #f0f0f0;
+}
+
+hr#below_content
+{
+   height: 3px;
+   width: 630px;
+   padding: 0;
+   margin: 0 130px 5px 0;
+   clear: both;
+}
+
+#contact_info
+{
+   width: auto;
+   margin: 0 0 20px 0;
+}
+
+#tech_dedication
+{
+   width: auto;
+   margin: 0 0 50px 0;
+}
+
+#legal
+{
+   width: 480px;
+   padding: 10px 10px;
+   margin: 0 0 20px 0;
+   border-style: solid;
+   border-width: 1px;
+}
+
+
+/*
+
+hdrcheat_box.css is an Cascading Style Sheet cheat sheet
+copyright 2011 Hans de Rooij, Original design Andreas Viklund
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of
+the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public 
+License (http://www.gnu.org/licenses/gpl.html) along with
+this program; if not, write to: 
+
+The Free Software Foundation, Inc.
+51 Franklin St
+Boston MA 20110-1301
+USA.
+
+*/
+

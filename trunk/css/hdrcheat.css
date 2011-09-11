@@ -64,37 +64,22 @@ Selector
    letter-spacing: ;
 }
 
-
-Setup the box model of the cheat sheet. The structure of the page is;
-
-body
-   center_col
-      page_header
-         page_header_url
-	 page_header_quote
-      banner
-
-      left_col
-         site_menu
-	 announce
-	 
-      right_col
-         add_info
-	 ext_menu
-
-      content
-      hr#below_content
-
-      contact_info
-      tech_dedication
-      legal
 */
+
 
 body
 {
    padding: 0;
    margin: 0;
    border-style: none;
+   font-family: Verdana,Tahoma,Arial,sans-serif;
+   font-size: 75%;
+   background-color: #f4f4f4;
+   background-image: url(../imgs/bg.gif);
+   background-position: top center;
+   background-attachment: scroll;
+   background-repeat: repeat-y;
+   color: #303030;
 }
 
 #center_col
@@ -102,6 +87,8 @@ body
    width: 760px;
    padding: 0;
    margin: 0 auto;
+   background-color: #ffffff;
+   color: #303030;
 }
 
 #page_header
@@ -120,12 +107,30 @@ body
    float: left;
 }
 
+#page_header_url h1
+{
+   padding: 0;
+   margin: 0;
+   letter-spacing: -0.1em;
+}
+
 #page_header_quote
 {
    width: 450px;
    padding: 0;
    margin: 0 0 12px 0;
    float: right;
+}
+
+#page_header_quote p 
+{
+   padding: 0;
+   margin: 0;
+   text-align: center;
+   font-size: 0.85em;
+   line-height: 1.2em;
+   background-color: inherit;
+   color: #a0a0a0;
 }
 
 #banner
@@ -151,11 +156,60 @@ body
    margin: 0 0 20px 0;
 }
 
+#site_menu ul
+{
+   padding: 0;
+   margin: 0;
+   font-size: 1.1em;
+   list-style: none;
+}
+
+#site_menu li
+{
+   margin-bottom: 4px;
+}
+
+#site_menu li a
+{
+   height: 20px;
+   padding: 6px 0 0 10px;
+   border-left-style: solid;
+   border-left-width: 4px;
+   display: block;
+   font-weight: bold;
+   background-color: #f4f4f4;
+   color: #505050;
+   border-left-color: #cccccc;
+   text-decoration: none;
+}
+
+#site_menu li a:hover
+{
+   background-color: #eaeaea;
+   color: #286ea0;
+   border-color: #286ea0;
+}
+
 #announce
 {
    width: 130px;
    padding: 10px;
    margin: 0 0 15px 0;
+   line-height: 1.3em;
+   background-color: #f4f4f4;
+   color: #505050;
+}
+
+#announce h3
+{
+   margin: 0 0 5px 0;
+   font-size: 1.3em;
+}
+
+#announce p
+{
+   margin: 0 0 10px 0;
+   font-size: 0.9em;
 }
 
 #right_col
@@ -173,11 +227,35 @@ body
    margin: 0 0 20px 0;
 }
 
+#add_info h3
+{
+   margin: 0 0 5px 0;
+   font-size: 1.3em;
+}
+
+#add_info p
+{
+   margin: 0 0 5px 0;
+   font-size: 0.9em;
+}
+
 #ext_menu
 {
    width: inherit;
    padding: 0;
    margin: 0 0 15px 0;
+}
+
+#ext_menu h3
+{
+   margin: 0 0 5px 0;
+   font-size: 1.3em;
+}
+
+#ext_menu p
+{
+   margin: 0 0 5px 0;
+   font-size: 0.9em;
 }
 
 #content
@@ -191,6 +269,8 @@ body
    border-right-style: solid;
    border-right-width: 1px;
    border-right-color: #f0f0f0;
+   text-align: left;
+   line-height: 1.6em;
 }
 
 hr#below_content
@@ -200,6 +280,8 @@ hr#below_content
    padding: 0;
    margin: 0 130px 5px 0;
    clear: both;
+   background-color: #cccccc;
+   color: #cccccc;
 }
 
 #contact_info
@@ -214,6 +296,11 @@ hr#below_content
    margin: 0 0 50px 0;
 }
 
+#tech_dedication p img
+{
+   vertical-align: middle;
+}
+
 #legal
 {
    width: 480px;
@@ -221,15 +308,35 @@ hr#below_content
    margin: 0 0 20px 0;
    border-style: solid;
    border-width: 1px;
+   text-align: justify;
+   font-size: 0.9em;
+   background-color: #f4f4f4;
+   color: inherit;
 }
 
-
-/* Apply basic formatting to the cheat sheet */
-
-body
+#legal p
 {
-   font-family: Verdana,Tahoma,Arial,sans-serif;
-   font-size: 75%;
+   padding: 5px;
+   margin: 0;
+}
+
+.hide
+{
+   display: none;
+}
+
+.cap1st
+{
+   font-style: italic;
+   text-transform: capitalize;
+   background-color: inherit;
+   color: #286ea0;
+}
+
+a img
+{
+   border-style: none;
+   text-decoration: none;
 }
 
 h1
@@ -260,194 +367,6 @@ p
 {
    margin: 1em 0 0 0;
 }
-
-#page_header_url h1
-{
-   padding: 0;
-   margin: 0;
-   letter-spacing: -0.1em;
-}
-
-#page_header_quote p 
-{
-   padding: 0;
-   margin: 0;
-   text-align: center;
-   font-size: 0.85em;
-   line-height: 1.2em;
-}
-
-#site_menu ul
-{
-   padding: 0;
-   margin: 0;
-   font-size: 1.1em;
-   list-style: none;
-}
-
-#site_menu li
-{
-   margin-bottom: 4px;
-}
-
-#site_menu li a
-{
-   height: 20px;
-   padding: 6px 0 0 10px;
-   border-left-style: solid;
-   border-left-width: 4px;
-   display: block;
-   font-weight: bold;
-}
-
-#announce
-{
-   line-height: 1.3em;
-}
-
-#announce h3
-{
-   margin: 0 0 5px 0;
-   font-size: 1.3em;
-}
-
-#announce p
-{
-   margin: 0 0 10px 0;
-   font-size: 0.9em;
-}
-
-#add_info h3
-{
-   margin: 0 0 5px 0;
-   font-size: 1.3em;
-}
-
-#add_info p
-{
-   margin: 0 0 5px 0;
-   font-size: 0.9em;
-}
-
-#ext_menu h3
-{
-   margin: 0 0 5px 0;
-   font-size: 1.3em;
-}
-
-#ext_menu p
-{
-   margin: 0 0 5px 0;
-   font-size: 0.9em;
-}
-
-#content
-{
-   text-align: left;
-   line-height: 1.6em;
-}
-
-#tech_dedication p img
-{
-   vertical-align: middle;
-}
-
-#legal
-{
-   text-align: justify;
-   font-size: 0.9em;
-}
-
-#legal p
-{
-   padding: 5px;
-   margin: 0;
-}
-
-.hide
-{
-   display: none;
-}
-
-.cap1st
-{
-   font-style: italic;
-   text-transform: capitalize;
-}
-
-a img
-{
-   border-style: none;
-   text-decoration: none;
-}
-
-
-/* Apply color and background formatting to the cheat sheet */
-
-body
-{
-   background-color: #f4f4f4;
-   background-image: url(../imgs/bg.gif);
-   background-position: top center;
-   background-attachment: scroll;
-   background-repeat: repeat-y;
-   color: #303030;
-}
-
-#center_col
-{
-   background-color: #ffffff;
-   color: #303030;
-}
-
-#page_header_quote p 
-{
-   background-color: inherit;
-   color: #a0a0a0;
-}
-
-#site_menu li a
-{
-   background-color: #f4f4f4;
-   color: #505050;
-   border-left-color: #cccccc;
-   text-decoration: none;
-}
-
-#site_menu li a:hover
-{
-   background-color: #eaeaea;
-   color: #286ea0;
-   border-color: #286ea0;
-}
-
-#announce
-{
-   background-color: #f4f4f4;
-   color: #505050;
-}
-
-
-hr#below_content
-{
-   background-color: #cccccc;
-   color: #cccccc;
-}
-
-#legal
-{
-   background-color: #f4f4f4;
-   color: inherit;
-}
-
-.cap1st
-{
-   background-color: inherit;
-   color: #286ea0;
-}
-
-
-/* Apply formatting to the form elements of the cheat sheet */
 
 form
 {
@@ -481,6 +400,13 @@ form fieldset table
 {
    padding: 0;
    margin: 0 auto;
+   border-style: none;
+}
+
+form fieldset table tr, form fieldset table td
+{
+   padding: 0;
+   margin: 0;
 }
 
 .FormLeftCol
@@ -496,19 +422,6 @@ form fieldset table
 .FormRightCol
 {
    width: 190px;
-}
-
-form fieldset table tr
-{
-   padding: 0;
-   margin: 0;
-}
-
-form fieldset table td
-{
-   padding: 0;
-   margin: 0;
-   border-style: none;
 }
 
 label
@@ -545,6 +458,8 @@ input
 input.OptOrChk
 {
    width: 15px;
+   margin: 0;
+   margin-top: -2px;
    border-style: none;
 }
 
@@ -597,4 +512,5 @@ Boston MA 20110-1301
 USA.
 
 */
+
 

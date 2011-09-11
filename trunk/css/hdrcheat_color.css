@@ -1,0 +1,90 @@
+/* Apply color and background formatting to the cheat sheet */
+
+body
+{
+   background-color: #f4f4f4;
+   background-image: url(../imgs/bg.gif);
+   background-position: top center;
+   background-attachment: scroll;
+   background-repeat: repeat-y;
+   color: #303030;
+}
+
+#center_col
+{
+   background-color: #ffffff;
+   color: #303030;
+}
+
+#page_header_quote p 
+{
+   background-color: inherit;
+   color: #a0a0a0;
+}
+
+#site_menu li a
+{
+   background-color: #f4f4f4;
+   color: #505050;
+   border-left-color: #cccccc;
+   text-decoration: none;
+}
+
+#site_menu li a:hover
+{
+   background-color: #eaeaea;
+   color: #286ea0;
+   border-color: #286ea0;
+}
+
+#announce
+{
+   background-color: #f4f4f4;
+   color: #505050;
+}
+
+
+hr#below_content
+{
+   background-color: #cccccc;
+   color: #cccccc;
+}
+
+#legal
+{
+   background-color: #f4f4f4;
+   color: inherit;
+}
+
+.cap1st
+{
+   background-color: inherit;
+   color: #286ea0;
+}
+
+/*
+
+hdrcheat_color.css is an Cascading Style Sheet cheat sheet
+copyright 2011 Hans de Rooij, Original design Andreas Viklund
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of
+the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public 
+License (http://www.gnu.org/licenses/gpl.html) along with
+this program; if not, write to: 
+
+The Free Software Foundation, Inc.
+51 Franklin St
+Boston MA 20110-1301
+USA.
+
+*/
+
