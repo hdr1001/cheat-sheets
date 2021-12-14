@@ -71,23 +71,23 @@ void f001()
 //Integer type ranges and byte sizes
 void f002()
 {
-   printf("Type char          : range[%d, %d] and size in bytes %d\n",
+   printf("Type char          : range[%d, %d] and size in bytes %ld\n",
              CHAR_MIN, CHAR_MAX, sizeof(char));
-   printf("Type short         : range[%d, %d] and size in bytes %d\n",
+   printf("Type short         : range[%d, %d] and size in bytes %ld\n",
              SHRT_MIN, SHRT_MAX, sizeof(short));
-   printf("Type int           : range[%d, %d] and size in bytes %d\n",
+   printf("Type int           : range[%d, %d] and size in bytes %ld\n",
              INT_MIN, INT_MAX, sizeof(int));
-   printf("Type long          : range[%ld, %ld] and size in bytes %d\n",
+   printf("Type long          : range[%ld, %ld] and size in bytes %ld\n",
              LONG_MIN, LONG_MAX, sizeof(long));
-   printf("Type signed char   : range[%d, %d] and size in bytes %d\n",
+   printf("Type signed char   : range[%d, %d] and size in bytes %ld\n",
              SCHAR_MIN, SCHAR_MAX, sizeof(signed char));
-   printf("Type unsigned char : range[%d, %u] and size in bytes %d\n",
+   printf("Type unsigned char : range[%d, %u] and size in bytes %ld\n",
              0, UCHAR_MAX, sizeof(unsigned char));
-   printf("Type unsigned short: range[%d, %u] and size in bytes %d\n",
+   printf("Type unsigned short: range[%d, %u] and size in bytes %ld\n",
              0, USHRT_MAX, sizeof(unsigned short));
-   printf("Type unsigned int  : range[%d, %u] and size in bytes %d\n",
+   printf("Type unsigned int  : range[%d, %u] and size in bytes %ld\n",
              0, UINT_MAX, sizeof(unsigned int));
-   printf("Type unsigned long : range[%d, %lu] and size in bytes %d\n",
+   printf("Type unsigned long : range[%d, %lu] and size in bytes %ld\n",
              0, ULONG_MAX, sizeof(unsigned long));
 
    return;
@@ -109,9 +109,9 @@ void f003()
    printf("1000 * 0.1 = %f (or is it?)\n\n", flt1);
 
    //Floating point variable byte sizes
-   printf("Byte size of a float       = %d\n", sizeof(flt1));
-   printf("Byte size of a double      = %d\n", sizeof(double));
-   printf("Byte size of a long double = %d\n", sizeof(long double));
+   printf("Byte size of a float       = %ld\n", sizeof(flt1));
+   printf("Byte size of a double      = %ld\n", sizeof(double));
+   printf("Byte size of a long double = %ld\n", sizeof(long double));
 
    return;
 }
